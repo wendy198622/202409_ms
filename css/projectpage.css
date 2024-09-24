@@ -719,524 +719,357 @@ header .logo h1 span {
 }
 
 #section0 {
-  background-image: url(../img/kv.jpg);
-  -webkit-animation: slidein 10s linear infinite alternate forwards;
-          animation: slidein 10s linear infinite alternate forwards;
+  background-image: url(../img/project_kv.png);
 }
 
-@-webkit-keyframes slidein {
-  from {
-    background-position: center;
-    background-size: 140%;
-  }
-  to {
-    background-position: center;
-    background-size: 120%;
-  }
+#section0 .projectpage_intro {
+  width: 600px;
+  margin: 0 auto;
+  padding: 40px 0;
+  background: rgba(255, 255, 255, 0.8);
 }
 
-@keyframes slidein {
-  from {
-    background-position: center;
-    background-size: 140%;
-  }
-  to {
-    background-position: center;
-    background-size: 120%;
-  }
+#section0 .projectpage_intro .projectpage_title {
+  font-size: 60px;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 
-.aboutus {
-  background: #1b7544;
-  background: linear-gradient(100deg, #1b7544 0%, #2b326a 100%);
+#section0 .projectpage_intro h4 {
+  color: #231815;
 }
 
-.aboutus h5 {
-  margin-bottom: 60px;
+#section0 .projectpage_intro h6 {
+  color: #231815;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 400;
 }
 
-.aboutus p {
+#section0 .projectpage_intro .info {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+
+#section0 .projectpage_intro .info li {
+  padding: 4px 12px;
+  margin: 0 10px;
+  border: 1px solid #231815;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.image {
+  background-image: url(../img/projectpage_bg_dark.png);
+}
+
+.image p {
   text-align: center;
 }
 
-.hotsale .fp-overflow {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  overflow: hidden;
+.image .photo_frame {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 40px 0;
 }
 
-.hotsale:nth-child(even) .fp-overflow {
+.image .photo_frame img {
+  margin: 0 10px;
+}
+
+.infomation {
+  background-image: url(../img/projectpage_bg_dark.png);
+  padding: 100px;
+}
+
+.infomation .infomation_frame {
+  background: #2F3138;
+  padding: 60px 100px;
+}
+
+.infomation .infomation_frame .infomation_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 40px 20px 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.infomation .infomation_frame .infomation_list ul {
+  width: calc((100% - 40px) / 2);
+}
+
+.infomation .infomation_frame .infomation_list ul li {
+  border-bottom: 1px solid #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.infomation .infomation_frame .infomation_list ul li span {
+  width: 120px;
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-family: "Noto Sans TC", sans-serif;
+  line-height: 3;
+  text-align: left;
+}
+
+.infomation .infomation_frame .infomation_list ul li span:nth-child(2) {
+  width: calc(100% - 120px);
+}
+
+.infomation .infomation_frame .infomation_company {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.infomation .infomation_frame .infomation_company .logo img {
+  width: 60px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 16px;
+  margin-bottom: 6px;
+}
+
+.infomation .infomation_frame .infomation_company .logo a {
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: 6px;
+  color: #fff;
+}
+
+.infomation .infomation_frame .infomation_company .info ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.infomation .infomation_frame .infomation_company .info ul li {
+  color: #fff;
+  font-size: 14px;
+}
+
+.infomation .infomation_frame .infomation_company .info ul li span {
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  color: #fff;
+}
+
+.infomation .infomation_frame .infomation_company .info ul li a {
+  font-size: 14px;
+  letter-spacing: 2px;
+  display: inline-block;
+  vertical-align: middle;
+  color: #fff;
+}
+
+.infomation .infomation_frame .infomation_company .info ul li + li {
+  margin-left: 16px;
+}
+
+.feature {
+  background-image: url(../img/projectpage_bg_color1.png);
+}
+
+.feature .feature_frame {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.feature .feature_frame .photo {
+  margin: 0 20px;
+}
+
+.feature .feature_frame .info {
+  margin: 0 20px;
+}
+
+.feature .feature_frame .info h5 {
+  text-align: left;
+}
+
+.feature:nth-child(odd) {
+  background-image: url(../img/projectpage_bg_color2.png);
+}
+
+.feature:nth-child(odd) .feature_frame {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
 }
 
-.hotsale .hotsale_photo {
-  width: calc(100% - 600px);
-  float: left;
-  height: 100vh;
-  overflow: hidden;
+.form {
+  background-color: #151820;
 }
 
-.hotsale .hotsale_photo .item {
-  height: 100vh;
-}
-
-.hotsale .hotsale_intro {
-  width: 600px;
-  float: right;
-  background: url(../img/home-hotsale_bg.png) right center no-repeat;
-  background-size: cover;
-  text-align: left;
-  padding: 80px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.hotsale .hotsale_intro h6 {
-  margin-top: 12px;
-}
-
-.hotsale .hotsale_intro p {
-  margin-top: 60px;
-}
-
-.hotsale .hotsale_intro .hotsale_intro_info {
-  text-align: left;
-  margin-top: 60px;
-}
-
-.hotsale .hotsale_intro .hotsale_intro_info .logo {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.hotsale .hotsale_intro .hotsale_intro_info .logo img {
-  width: 60px;
-}
-
-.hotsale .hotsale_intro .hotsale_intro_info .logo h5 {
-  margin-left: 12px;
-}
-
-.hotsale .hotsale_intro .hotsale_intro_info .location {
-  padding-left: 20px;
-  border-left: 1px solid #fff;
-  margin-top: 10px;
-}
-
-.hotsale .hotsale_intro .hotsale_intro_info .location span {
-  font-size: 14px;
-  display: block;
-  font-family: "Noto Sans TC", sans-serif;
-  color: #fff;
-  letter-spacing: 2px;
-}
-
-.hotsale .hotsale_intro .hotsale_intro_info .link {
-  background: #fff;
-  border-radius: 10px;
-  display: inline-block;
-  margin-top: 20px;
-  padding: 6px 12px 4px;
-}
-
-.hotsale .hotsale_intro .hotsale_intro_info .link a {
-  display: block;
-  margin: 0 auto;
-  text-transform: uppercase;
-  vertical-align: middle;
-  color: transparent;
-  background: #1b7544;
-  background: linear-gradient(100deg, #1b7544 0%, #2b326a 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  text-align: center;
-  font-family: "Playfair Display", serif;
-  font-weight: 600;
-  letter-spacing: 2px;
-}
-
-.hotsale .hotsale_intro .hotsale_intro_info .link a span {
-  vertical-align: middle;
-  margin-left: 6px;
-  color: #2b326a;
-  margin-bottom: 3px;
-  -webkit-transition: all .3s;
-  transition: all .3s;
-}
-
-.hotsale .hotsale_intro .hotsale_intro_info .link a:hover span {
-  -webkit-transform: translateX(10px);
-          transform: translateX(10px);
-}
-
-.news .title, .progress .title {
-  width: 115px;
-  height: 400px;
-  float: left;
-  text-align: left;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
-}
-
-.news .title h4, .progress .title h4 {
-  line-height: 120%;
-  color: #fff;
-}
-
-.news .title h4 .en, .progress .title h4 .en {
-  margin-top: 10px;
-  font-size: 14px;
-  font-family: "Playfair Display", serif;
-  text-transform: uppercase;
-  line-height: 140%;
-  padding-left: 16px;
-  position: relative;
-  color: #fff;
-}
-
-.news .title h4 .en::before, .progress .title h4 .en::before {
-  content: "";
-  width: 4px;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: #fff;
-}
-
-.news {
-  background-image: url(../img/home-news_bg.png);
-}
-
-.news .news_frame .news_list {
-  width: calc(100% - 160px);
-  float: right;
-}
-
-.news .news_frame .news_list .item {
-  padding: 0 10px;
-}
-
-.news .news_frame .news_list .item .news_info {
+.form .fp-overflow {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.news .news_frame .news_list .item .news_info .category {
-  position: relative;
+.form .map_frame {
+  width: calc(100% - 640px);
+  height: 100vh;
 }
 
-.news .news_frame .news_list .item .news_info .category h6 {
-  color: #231815;
-  background: #fff;
-  padding: 2px 5px 2px 10px;
-}
-
-.news .news_frame .news_list .item .news_info .category:after {
-  content: "";
-  width: 0;
-  height: 0;
-  position: absolute;
-  right: -15px;
-  top: 50%;
-  -webkit-transform: translateY(-14px);
-          transform: translateY(-14px);
-  border-style: solid;
-  border-width: 25px 15px 0 0;
-  border-color: #fff transparent transparent transparent;
-}
-
-.news .news_frame .news_list .item .news_info .date {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
-.news .news_frame .news_list .item .news_info .date .year {
-  font-size: 20px;
-  padding-bottom: 8px;
-  color: #fff;
-  font-weight: 600;
-  letter-spacing: 1px;
-}
-
-.news .news_frame .news_list .item .news_info .date .month {
-  font-size: 48px;
-  color: #fff;
-  font-weight: 700;
-}
-
-.news .news_frame .news_list .item .news_info .date .month:before {
-  content: ".";
-  padding: 0 3px;
-  color: #fff;
-}
-
-.news .news_frame .news_list .item .news_photo {
+.form .map_frame iframe {
   width: 100%;
-  height: 0;
-  padding-bottom: 66.66667%;
-}
-
-.news .news_frame .news_list .item .news_content h5 {
-  text-align: left;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  margin-top: 20px;
-  line-height: 140%;
-}
-
-.news .news_frame .news_list .item .news_content p {
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-.news .news_frame .news_list .item .news_content a {
-  width: auto;
-  margin: 0;
-  text-transform: uppercase;
-  vertical-align: middle;
-  color: #fff;
-  background: none;
-  text-align: left;
-  margin-top: 10px;
-  font-family: "Playfair Display", serif;
-  font-weight: 600;
-  letter-spacing: 2px;
-}
-
-.news .news_frame .news_list .item .news_content a span {
-  vertical-align: middle;
-  margin-left: 6px;
-  color: #fff;
-  margin-bottom: 3px;
-}
-
-.news .allnews {
-  display: inline-block;
-  margin: 0 auto;
-  padding: 10px 20px;
-  text-transform: uppercase;
-  vertical-align: middle;
-  color: #231815;
-  background: #fff;
-  text-align: center;
-  margin-top: 40px;
-  font-family: "Playfair Display", serif;
-  font-weight: 600;
-  letter-spacing: 2px;
-  border-radius: 10px;
-}
-
-.news .allnews span {
-  vertical-align: middle;
-  margin-left: 6px;
-  color: #231815;
-  margin-bottom: 3px;
-  -webkit-transition: all .3s;
-  transition: all .3s;
-}
-
-.news .allnews:hover span {
-  -webkit-transform: translateX(10px);
-          transform: translateX(10px);
-}
-
-.progress {
-  background: #231815;
-}
-
-.progress .progress_frame .progress_list {
-  width: calc(100% - 160px);
-  float: right;
-}
-
-.progress .progress_frame .progress_list .item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  position: relative;
-}
-
-.progress .progress_frame .progress_list .item:after {
-  content: "";
-  width: 1px;
-  height: calc(100% - 66px);
-  background: #fff;
-  position: absolute;
-  bottom: 0;
-  left: 60px;
-}
-
-.progress .progress_frame .progress_list .item .progress_info {
-  width: 120px;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  margin-right: -4px;
 }
 
-.progress .progress_frame .progress_list .item .progress_info .date {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+.form .form_frame {
+  width: 640px;
+  padding: 0 80px;
 }
 
-.progress .progress_frame .progress_list .item .progress_info .date .year, .progress .progress_frame .progress_list .item .progress_info .date .month {
-  font-size: 20px;
-  color: #fff;
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+.form .form_frame h4 {
+  margin-bottom: 40px;
 }
 
-.progress .progress_frame .progress_list .item .progress_info .date .year {
-  margin-bottom: -4px;
-}
-
-.progress .progress_frame .progress_list .item .progress_info .date .month {
-  letter-spacing: 3px;
-}
-
-.progress .progress_frame .progress_list .item .progress_info .day {
-  font-size: 54px;
-  line-height: 1;
-  color: #fff;
-  font-weight: 700;
-  margin-left: 6px;
-}
-
-.progress .progress_frame .progress_list .item .progress_photo {
-  width: 240px;
-  height: 160px;
-  margin: 0 10px;
-}
-
-.progress .progress_frame .progress_list .item .progress_content {
-  width: calc( 100% - 400px);
+.form .form_frame .item {
+  width: 100%;
   text-align: left;
 }
 
-.progress .progress_frame .progress_list .item .progress_content h5 {
-  text-align: left;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  line-height: 140%;
-}
-
-.progress .progress_frame .progress_list .item .progress_content p {
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  margin-top: 10px;
-}
-
-.progress .progress_frame .progress_list .item .progress_content a {
-  width: auto;
-  display: inline-block;
-  margin: 0;
-  padding: 4px 20px 2px;
-  text-transform: uppercase;
-  vertical-align: middle;
-  color: #fff;
-  background: #1b7544;
-  background: linear-gradient(100deg, #1b7544 0%, #2b326a 100%);
-  text-align: left;
-  margin-top: 10px;
-  font-family: "Playfair Display", serif;
-  font-weight: 600;
+.form .form_frame .item input, .form .form_frame .item select, .form .form_frame .item textarea {
+  width: 100%;
+  height: 52px;
+  margin-bottom: 16px;
+  font-size: 18px;
+  line-height: 160%;
+  font-family: "Noto Sans TC", sans-serif;
   letter-spacing: 2px;
-  border-radius: 10px;
 }
 
-.progress .progress_frame .progress_list .item .progress_content a span {
-  vertical-align: middle;
-  margin-left: 6px;
-  color: #fff;
-  margin-bottom: 3px;
+.form .form_frame .item input:checked, .form .form_frame .item input:focus, .form .form_frame .item select:checked, .form .form_frame .item select:focus, .form .form_frame .item textarea:checked, .form .form_frame .item textarea:focus {
+  outline: 0;
+  border: 0;
 }
 
-.progress .progress_frame .progress_list .item + .item {
-  margin-top: 20px;
+.form .form_frame .item textarea {
+  width: 100%;
+  height: 120px;
+  resize: none;
+  display: block;
 }
 
-.progress .allprogress {
-  display: inline-block;
-  margin: 0 auto;
-  padding: 10px 20px;
-  text-transform: uppercase;
-  vertical-align: middle;
+.form .form_frame .item ::-webkit-input-placeholder {
+  font-size: 18px;
+  line-height: 160%;
   color: #231815;
+  font-weight: 400;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.form .form_frame .item :-ms-input-placeholder {
+  font-size: 18px;
+  line-height: 160%;
+  color: #231815;
+  font-weight: 400;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.form .form_frame .item ::-ms-input-placeholder {
+  font-size: 18px;
+  line-height: 160%;
+  color: #231815;
+  font-weight: 400;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.form .form_frame .item ::placeholder {
+  font-size: 18px;
+  line-height: 160%;
+  color: #231815;
+  font-weight: 400;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.form .form_frame .item input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
   background: #fff;
-  text-align: center;
-  margin-top: 40px;
-  font-family: "Playfair Display", serif;
-  font-weight: 600;
-  letter-spacing: 2px;
-  border-radius: 10px;
+  padding: 0;
+  margin-right: 10px;
+  float: left;
 }
 
-.progress .allprogress span {
-  vertical-align: middle;
-  margin-left: 6px;
+.form .form_frame .item input[type="checkbox"]:checked {
+  background-image: url(../img/check.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.form .form_frame .item .checktxt {
+  width: calc(100% - 40px);
+  font-family: "Noto Sans TC", sans-serif;
+  letter-spacing: 3px;
+  color: #fff;
+}
+
+.form .form_frame .item .checktxt a {
+  display: inline-block;
+  font-size: 14px;
+  text-decoration: underline;
+  color: #fff;
+}
+
+.form .form_frame button {
+  width: 180px;
+  margin: 40px auto;
+  background: #fff;
   color: #231815;
-  margin-bottom: 3px;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  font-size: 28px;
+  line-height: 160%;
+  font-weight: 500;
+  letter-spacing: 2px;
+  display: block;
 }
 
-.progress .allprogress:hover span {
-  -webkit-transform: translateX(10px);
-          transform: translateX(10px);
+.form .form_frame button:hover {
+  cursor: pointer;
 }
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=projectpage.css.map */

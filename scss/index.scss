@@ -77,12 +77,50 @@
             .location{
                 padding-left: 20px;
                 border-left: 1px solid #fff;
+                margin-top: 10px;
                 span{
                     font-size: 14px;
                     display: block;
                     font-family: $font-sans;
                     color: #fff;
                     letter-spacing: 2px;
+                }
+            }
+
+            .link{
+                background: #fff;
+                border-radius: 10px;
+                display: inline-block;
+                margin-top: 20px;
+                padding: 6px 12px 4px;
+                a{
+                    // width: 160px;
+                    display: block;
+                    margin: 0 auto;
+                    text-transform: uppercase;
+                    vertical-align: middle;
+                    color: transparent;
+                    background: rgb(27,117,68);
+                    background: linear-gradient(100deg, rgba(27,117,68,1) 0%, rgba(43,50,106,1) 100%);                    
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    // background: #fff;
+                    text-align: center;
+                    font-family: $font-en;
+                    font-weight: 600;
+                    letter-spacing: 2px;
+                    span{
+                        vertical-align: middle;
+                        margin-left: 6px;
+                        color: rgba(43,50,106,1);
+                        margin-bottom: 3px;
+                        transition: all .3s;
+                    }
+                    &:hover{
+                        span{
+                            transform: translateX(10px);
+                        }
+                    }
                 }
             }
         }
@@ -127,12 +165,6 @@
 .news{
     background-image: url(../img/home-news_bg.png);
     .news_frame{
-        max-width: 1600px;
-        margin: 0 auto;
-        overflow: hidden;
-        @media (max-width:1640px){
-            width: 96%;
-        }
         .news_list{
             width: calc(100% - 160px);
             float: right;
@@ -260,12 +292,6 @@
 .progress{
     background: #231815;
     .progress_frame{
-        max-width: 1600px;
-        margin: 0 auto;
-        overflow: hidden;
-        @media (max-width:1640px){
-            width: 96%;
-        }
         .progress_list{
             width: calc(100% - 160px);
             float: right;
@@ -397,10 +423,3 @@
         }
     }
 }
-// #slide1{
-//     background-image: url(https://raw.githubusercontent.com/alvarotrigo/fullPage.js/master/examples/imgs/bg2.jpg);
-// }
-
-// #slide2{
-//     background-image: url(https://raw.githubusercontent.com/alvarotrigo/fullPage.js/master/examples/imgs/bg5.jpg);
-// }

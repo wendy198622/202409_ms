@@ -196,6 +196,14 @@ input, button, select, textarea{
         cursor: pointer;
     }
 }
+.frame{
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow: hidden;
+    @media (max-width:1480px){
+        width: 96%;
+    }
+}
 
 .section,
 .slide{
@@ -224,4 +232,57 @@ input, button, select, textarea{
     background: #fff;
     border-radius: 12px;
     content: "";
+}
+
+#page_navigation{
+    text-align: center;
+    // margin: 80px 0 0;
+    >div{
+        height: 36px;
+        line-height: 36px;
+        display: inline-block;
+        margin: 0 10px;
+        transition: all .3s;
+        a{
+            font-size: 20px;
+            transition: all .3s;
+            color: #fff;
+
+            span{
+                vertical-align: middle;
+                color: #fff;
+            }
+        }
+    }
+    .page_link{
+        width: 36px;
+        border-radius: 36px;
+        margin: 0 6px;
+        // border: 1px solid #231815;
+        &.active_page, &:hover{
+            background: #231815;
+            a{
+                color: #fff;
+            }
+        }
+    }
+}
+
+.fancybox__container{
+    // --fancybox-bg: rgba(0,0,0,.6) !important;
+    .fancybox__toolbar{
+        button{
+            background: #fff;
+        }
+    }
+    .fancybox__nav{
+        button{
+            background: #fff;
+            box-shadow: none;
+            &:hover{
+                background: #fff;
+                opacity: 0.6;
+            }
+        }
+    }
 }

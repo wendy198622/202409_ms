@@ -6,7 +6,7 @@ header{
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 2;
+    z-index: 5;
     .logo{
         img{
             width: 80px;
@@ -27,7 +27,6 @@ header{
     }
 }
 #menu{  
-    // width: 100%;
     height: 500px;
     position: absolute;
     top: 0;
@@ -36,8 +35,8 @@ header{
     padding: 60px 40px;
     display: inline-flex;
     flex-direction: row-reverse;
-    // justify-content: flex-end;
     align-items: flex-start;
+    background: none;
     .nav-trigger {
         width: 40px;
         height: 35px;
@@ -59,7 +58,7 @@ header{
             height: 5px;
             width: 100%;
             border-radius: 9px;
-            background: #231815;
+            background: #fff;
             opacity: 1;
             left: 0;
             -webkit-transform: rotate(0deg);
@@ -133,7 +132,7 @@ header{
                     width: 5px;
                     height: 5px;
                     border-radius: 5px;
-                    background: #231815;
+                    background: #fff;
                     position: absolute;
                     top: 15px;
                     left: 50%;
@@ -150,16 +149,16 @@ header{
                         font-weight: 500;
                         padding: 15px 0;
                         height: 0;
+                        color: #fff;
                         overflow: hidden;
                     }
                 }
 
                 &:hover{
-                    background: #fff;
+                    background: #231815;
                 }
             }
         }
-
         &.open{
             opacity: 1;
             ul{
@@ -174,6 +173,40 @@ header{
             }
         }
     }
+
+    &.home{
+
+        .nav-trigger {
+            
+            span {
+                background: #231815;
+            }
+        }
+
+        nav{
+            ul {
+
+                li {
+
+                    &:before{
+                        background: #231815;
+                    }
+
+                    a{
+                    
+                        .nav-label {
+                            color: #231815;
+                        }
+                    }
+
+                    &:hover{
+                        background: #fff;
+                    }
+                }
+            }
+        }
+    }
+    
 
 
     

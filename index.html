@@ -45,7 +45,7 @@
 					</a>
 				</div>
 			</header>
-			<div id="menu">
+			<div id="menu" class="home">
 				<div id="nav-trigger" class="nav-trigger">
 					<span></span>
 					<span></span>
@@ -56,22 +56,25 @@
 				<nav id="nav">
 					<ul>
 						<li>
-							<a href="#"><span class="nav-label">關於明尚</span></a>
+							<a href="aboutus.html"><span class="nav-label">明尚信念</span></a>
 						</li>
 						<li>
-							<a href="#"><span class="nav-label">最新消息</span></a>
+							<a href="news.html"><span class="nav-label">最新消息</span></a>
 						</li>
 						<li>
-							<a href="#"><span class="nav-label">銷售個案</span></a>
+							<a href="hotsale.html"><span class="nav-label">熱銷建案</span></a>
 						</li>
 						<li>
-							<a href="#"><span class="nav-label">歷年業績</span></a>
+							<a href="projects.html"><span class="nav-label">建築實績</span></a>
 						</li>
 						<li>
-							<a href="#"><span class="nav-label">工程進度</span></a>
+							<a href="progress.html"><span class="nav-label">工程進度</span></a>
 						</li>
 						<li>
-							<a href="#"><span class="nav-label">聯絡我們</span></a>
+							<a href="newss.html"><span class="nav-label">最新消息</span></a>
+						</li>
+						<li>
+							<a href="contactus.html"><span class="nav-label">聯絡我們</span></a>
 						</li>
 					</ul>
 				</nav>
@@ -125,6 +128,14 @@
 						<span>接待中心：梓官區和平路220巷59號</span>
 						<span>貴賓專線：07-6195888</span>
 					</div>
+                    <div class="link">
+                        <a href="projectpage.html">
+                            more
+                            <span class="material-icons">
+                                arrow_right_alt
+                            </span>
+                        </a>  
+                    </div>  
 				</div>
 			</div>
 		</div>
@@ -161,11 +172,19 @@
 						<span>接待中心：梓官區和平路220巷59號</span>
 						<span>貴賓專線：07-6195888</span>
 					</div>
+                    <div class="link">
+                        <a href="projectpage.html">
+                            more
+                            <span class="material-icons">
+                                arrow_right_alt
+                            </span>
+                        </a>  
+                    </div>  
 				</div>
 			</div>
 		</div>
 		<div class="section news" id="section4">
-			<div class="news_frame">
+			<div class="news_frame frame">
 				<div class="title wow fadeInUp" data-wow-duration="2s" data-wow-delay=".1s">
 					<h4>
 						最新<br>消息
@@ -296,7 +315,7 @@
 			</a>
 		</div>
 		<div class="section progress" id="section5">
-			<div class="progress_frame">
+			<div class="progress_frame frame">
 				<div class="title wow fadeInUp" data-wow-duration="2s" data-wow-delay=".1s">
 					<h4>
 						工程<br>進度
@@ -390,7 +409,7 @@
 						</div>
 				</div>
 			</div>
-			<a class="allprogress wow fadeInUp" data-wow-duration="2s" data-wow-delay="2s" href="news.html">
+			<a class="allprogress wow fadeInUp" data-wow-duration="2s" data-wow-delay="2s" href="progress.html">
 				所有工程進度
 				<span class="material-icons">
 						arrow_right_alt
@@ -401,22 +420,25 @@
 			<nav id="nav">
 				<ul>
 					<li>
-						<a href="#"><span class="nav-label">關於明尚</span></a>
+						<a href="aboutus.html">明尚信念</a>
 					</li>
 					<li>
-						<a href="#"><span class="nav-label">最新消息</span></a>
+						<a href="news.html">最新消息</a>
 					</li>
 					<li>
-						<a href="#"><span class="nav-label">銷售個案</span></a>
+						<a href="hotsale.html">熱銷建案</a>
 					</li>
 					<li>
-						<a href="#"><span class="nav-label">歷年業績</span></a>
+						<a href="projects.html">建築實績</a>
 					</li>
 					<li>
-						<a href="#"><span class="nav-label">工程進度</span></a>
+						<a href="progress.html">工程進度</a>
 					</li>
 					<li>
-						<a href="#"><span class="nav-label">聯絡我們</span></a>
+						<a href="news.html">最新消息</a>
+					</li>
+					<li>
+						<a href="contactus.html">聯絡我們</a>
 					</li>
 				</ul>
 			</nav>
@@ -455,10 +477,6 @@
 	$(document).ready(function () {
 		new WOW().init();
 		$(".imgLiquidFill").imgLiquid({fill:true});
-
-		// $('#section0').load('page/header.html');
-		// $('#nav').load('page/nav.html');
-		// $('#footer').load('page/footer.html');
 	})
 
 	$('#nav-trigger').click(function(){
