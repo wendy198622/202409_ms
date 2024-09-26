@@ -25,6 +25,17 @@ body{ font-family: "Noto Serif TC", serif;}
 *{ box-sizing: border-box; font-family: "Noto Serif TC", serif; color: #231815;}
 a, a:hover, a:active, a:visited{ text-decoration: none; display: block; transition: all .3s; outline: 0;}
 img{ width: 100%; display: block;}
+.fp-overflow{
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+    &:before{
+        content: "";
+        width: 0;
+        height: 100vh;
+    }
+}
 
 .pc{ display: block;}
 .mob{ display: none;}
@@ -209,6 +220,7 @@ input, button, select, textarea{
 .slide{
     background-size: cover;
     background-attachment: fixed;
+    background-position: center center;
 }
 
 .slick-prev{

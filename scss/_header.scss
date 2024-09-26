@@ -7,36 +7,95 @@ header{
     top: 0;
     left: 0;
     z-index: 5;
+    @media (max-width:1080px){
+        width: 480px;
+        height: auto;
+        padding: 20px 40px;
+    }
+    @media (max-width:960px){
+        width: 380px;
+    }
+    @media (max-width:600px){
+        width: 280px;
+    }
     .logo{
-        img{
-            width: 80px;
-        }
-        h1{
-            color: #231815;
-            font-family: $font-serif;
-            font-size: 42px;
-            font-weight: 700;
-            letter-spacing: 16px;
-            writing-mode: vertical-lr;
-            margin: 40px auto;
-            span{
-                display: inline-block;
-                letter-spacing: 0;
+        a{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            @media (max-width:1080px){
+                flex-direction: row;
             }
+            img{
+                width: 80px;
+                @media (max-width:960px){
+                    width: 60px;
+                }
+                @media (max-width:600px){
+                    width: 42px;
+                }
+            }
+            h1{
+                color: #231815;
+                font-family: $font-serif;
+                font-size: 42px;
+                font-weight: 700;
+                letter-spacing: 16px;
+                writing-mode: vertical-lr;
+                margin: 40px auto;
+                @media (max-width:1080px){
+                    font-size: 38px;
+                    writing-mode: horizontal-tb;
+                    text-align: left;
+                    margin: 20px 0 20px 40px;
+                    line-height: 1;
+                }
+                @media (max-width:960px){
+                    font-size: 32px;
+                    letter-spacing: 10px;
+                    margin: 10px 0 10px 40px;
+                }
+                @media (max-width:600px){
+                    font-size: 24px;
+                    letter-spacing: 6px;
+                    margin: 10px 0 10px 20px;
+                }
+                span{
+                    display: inline-block;
+                    letter-spacing: 0;
+                }
+            }
+            
         }
     }
 }
 #menu{  
-    height: 500px;
+    width: calc(100% - 160px);
+    height: auto;
     position: absolute;
     top: 0;
     right: 0;
+    left: auto;
     z-index: 2;
     padding: 60px 40px;
-    display: inline-flex;
+    display: flex;
     flex-direction: row-reverse;
     align-items: flex-start;
     background: none;
+    @media (max-width:1080px){
+        background: #fff;
+        padding: 24px 40px;
+    }
+    @media (max-width:960px){
+        padding: 11px 40px;
+    }
+    @media (max-width:600px){
+        padding: 7px 40px;
+    }
+    &.open{
+        z-index: 10;
+        width: 100%;
+    }
     .nav-trigger {
         width: 40px;
         height: 35px;
@@ -51,7 +110,13 @@ header{
         -o-transition: .5s ease-in-out;
         transition: .5s ease-in-out;
         cursor: pointer;
-        
+        @media (max-width:1080px){
+            margin: 17px 0;
+        }        
+        @media (max-width:960px){
+            height: 30px;
+            margin: 20px 0;
+        }
         span {
             display: block;
             position: absolute;
@@ -69,20 +134,32 @@ header{
             -moz-transition: .25s ease-in-out;
             -o-transition: .25s ease-in-out;
             transition: .25s ease-in-out;
+            @media (max-width:1080px){
+                background: #231815;
+            }
             
             &:nth-child(1) {
                 top: 0px;
             }
             &:nth-child(2),&:nth-child(3) {
                 top: 15px;
+                @media (max-width:960px){
+                    top: 12px;
+                }
             }
         
             &:nth-child(4) {
                 top: 30px;
+                @media (max-width:960px){
+                    top: 24px;
+                }
             }
         }
       
         &.open{
+            @media (max-width:1080px){
+                z-index: 10;
+            }
             span{
                 &:nth-child(1) {
                     top: 18px;
@@ -114,11 +191,21 @@ header{
     nav{
         margin-right: 20px;
         opacity: 0;
+        height: 0;
+        @media (max-width:1080px){
+            width: 100%;
+            padding-left: 40px;
+        }
         ul {
-            display: inline-flex;
+            display: flex;
             flex-direction: row-reverse;
+            justify-content: flex-end;
+            @media (max-width:1080px){
+                flex-direction: column;
+            }
 
             li {
+                width: 30px;
                 position: relative;
                 padding-top: 20px;
                 background: none;
@@ -126,6 +213,9 @@ header{
                 transition: all .3s;
                 transform: translateY(300%);
                 opacity: 0;
+                @media (max-width:1080px){
+                    width: 100%;
+                }
 
                 &:before{
                     content: "";
@@ -137,6 +227,9 @@ header{
                     top: 15px;
                     left: 50%;
                     transform: translate(-50%);
+                    @media (max-width:1080px){
+                        display: none;
+                    }
                 }
 
                 a{
@@ -151,6 +244,10 @@ header{
                         height: 0;
                         color: #fff;
                         overflow: hidden;
+                        @media (max-width:1080px){
+                            writing-mode: horizontal-tb;
+                            color: #231815;
+                        }
                     }
                 }
 
@@ -161,6 +258,7 @@ header{
         }
         &.open{
             opacity: 1;
+            height: auto;
             ul{
                 li{
                     transform: translateY(0);
@@ -196,6 +294,9 @@ header{
                     
                         .nav-label {
                             color: #231815;
+                            @media (max-width:1080px){
+                                // color: #fff;
+                            }
                         }
                     }
 

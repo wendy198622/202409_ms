@@ -35,6 +35,21 @@ img {
   display: block;
 }
 
+.fp-overflow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+}
+
+.fp-overflow:before {
+  content: "";
+  width: 0;
+  height: 100vh;
+}
+
 .pc {
   display: block;
 }
@@ -266,6 +281,7 @@ input, button, select, textarea {
 .slide {
   background-size: cover;
   background-attachment: fixed;
+  background-position: center center;
 }
 
 .slick-prev {
@@ -360,11 +376,65 @@ header {
   z-index: 5;
 }
 
-header .logo img {
+@media (max-width: 1080px) {
+  header {
+    width: 480px;
+    height: auto;
+    padding: 20px 40px;
+  }
+}
+
+@media (max-width: 960px) {
+  header {
+    width: 380px;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    width: 280px;
+  }
+}
+
+header .logo a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+@media (max-width: 1080px) {
+  header .logo a {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+header .logo a img {
   width: 80px;
 }
 
-header .logo h1 {
+@media (max-width: 960px) {
+  header .logo a img {
+    width: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  header .logo a img {
+    width: 42px;
+  }
+}
+
+header .logo a h1 {
   color: #231815;
   font-family: "Noto serif TC", sans-serif;
   font-size: 42px;
@@ -376,21 +446,51 @@ header .logo h1 {
   margin: 40px auto;
 }
 
-header .logo h1 span {
+@media (max-width: 1080px) {
+  header .logo a h1 {
+    font-size: 38px;
+    -webkit-writing-mode: horizontal-tb;
+        -ms-writing-mode: lr-tb;
+            writing-mode: horizontal-tb;
+    text-align: left;
+    margin: 20px 0 20px 40px;
+    line-height: 1;
+  }
+}
+
+@media (max-width: 960px) {
+  header .logo a h1 {
+    font-size: 32px;
+    letter-spacing: 10px;
+    margin: 10px 0 10px 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  header .logo a h1 {
+    font-size: 24px;
+    letter-spacing: 6px;
+    margin: 10px 0 10px 20px;
+  }
+}
+
+header .logo a h1 span {
   display: inline-block;
   letter-spacing: 0;
 }
 
 #menu {
-  height: 500px;
+  width: calc(100% - 160px);
+  height: auto;
   position: absolute;
   top: 0;
   right: 0;
+  left: auto;
   z-index: 2;
   padding: 60px 40px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
@@ -399,6 +499,30 @@ header .logo h1 span {
       -ms-flex-align: start;
           align-items: flex-start;
   background: none;
+}
+
+@media (max-width: 1080px) {
+  #menu {
+    background: #fff;
+    padding: 24px 40px;
+  }
+}
+
+@media (max-width: 960px) {
+  #menu {
+    padding: 11px 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  #menu {
+    padding: 7px 40px;
+  }
+}
+
+#menu.open {
+  z-index: 10;
+  width: 100%;
 }
 
 #menu .nav-trigger {
@@ -411,6 +535,19 @@ header .logo h1 span {
   -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
   cursor: pointer;
+}
+
+@media (max-width: 1080px) {
+  #menu .nav-trigger {
+    margin: 17px 0;
+  }
+}
+
+@media (max-width: 960px) {
+  #menu .nav-trigger {
+    height: 30px;
+    margin: 20px 0;
+  }
 }
 
 #menu .nav-trigger span {
@@ -428,6 +565,12 @@ header .logo h1 span {
   transition: .25s ease-in-out;
 }
 
+@media (max-width: 1080px) {
+  #menu .nav-trigger span {
+    background: #231815;
+  }
+}
+
 #menu .nav-trigger span:nth-child(1) {
   top: 0px;
 }
@@ -436,8 +579,26 @@ header .logo h1 span {
   top: 15px;
 }
 
+@media (max-width: 960px) {
+  #menu .nav-trigger span:nth-child(2), #menu .nav-trigger span:nth-child(3) {
+    top: 12px;
+  }
+}
+
 #menu .nav-trigger span:nth-child(4) {
   top: 30px;
+}
+
+@media (max-width: 960px) {
+  #menu .nav-trigger span:nth-child(4) {
+    top: 24px;
+  }
+}
+
+@media (max-width: 1080px) {
+  #menu .nav-trigger.open {
+    z-index: 10;
+  }
 }
 
 #menu .nav-trigger.open span:nth-child(1) {
@@ -465,19 +626,40 @@ header .logo h1 span {
 #menu nav {
   margin-right: 20px;
   opacity: 0;
+  height: 0;
+}
+
+@media (max-width: 1080px) {
+  #menu nav {
+    width: 100%;
+    padding-left: 40px;
+  }
 }
 
 #menu nav ul {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media (max-width: 1080px) {
+  #menu nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 #menu nav ul li {
+  width: 30px;
   position: relative;
   padding-top: 20px;
   background: none;
@@ -487,6 +669,12 @@ header .logo h1 span {
   -webkit-transform: translateY(300%);
           transform: translateY(300%);
   opacity: 0;
+}
+
+@media (max-width: 1080px) {
+  #menu nav ul li {
+    width: 100%;
+  }
 }
 
 #menu nav ul li:before {
@@ -500,6 +688,12 @@ header .logo h1 span {
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
+}
+
+@media (max-width: 1080px) {
+  #menu nav ul li:before {
+    display: none;
+  }
 }
 
 #menu nav ul li a {
@@ -519,12 +713,22 @@ header .logo h1 span {
   overflow: hidden;
 }
 
+@media (max-width: 1080px) {
+  #menu nav ul li a .nav-label {
+    -webkit-writing-mode: horizontal-tb;
+        -ms-writing-mode: lr-tb;
+            writing-mode: horizontal-tb;
+    color: #231815;
+  }
+}
+
 #menu nav ul li:hover {
   background: #231815;
 }
 
 #menu nav.open {
   opacity: 1;
+  height: auto;
 }
 
 #menu nav.open ul li {
@@ -621,6 +825,11 @@ header .logo h1 span {
   transition: opacity 0.5s linear 1s, -webkit-transform 0.5s linear 1s;
   transition: transform 0.5s linear 1s, opacity 0.5s linear 1s;
   transition: transform 0.5s linear 1s, opacity 0.5s linear 1s, -webkit-transform 0.5s linear 1s;
+}
+
+#footer .fp-overflow {
+  display: block;
+  height: auto;
 }
 
 #footer nav {

@@ -6,8 +6,8 @@
 }
 
 #section0{
-    background-image: url(../img/kv.jpg);
-    animation: slidein 10s linear infinite alternate forwards;
+    background-image: url(../img/kv_bg.png);
+    // animation: slidein 10s linear infinite alternate forwards;
 
     @keyframes slidein {
         from {background-position: center; background-size: 140%; }
@@ -18,35 +18,81 @@
 .aboutus{
     background: rgb(27,117,68);
     background: linear-gradient(100deg, rgba(27,117,68,1) 0%, rgba(43,50,106,1) 100%);
-    h5{
-        margin-bottom: 60px;
-    }
-    p{
-        text-align: center;
+    .fp-overflow{
+        align-items: center;
+        &:before{
+            content: "";
+            width: 0;
+            height: 100vh;
+        }
+        .aboutus_frame{
+            h5{
+                margin-bottom: 60px;
+            }
+            p{
+                text-align: center;
+            }
+        }
     }
 }
 .hotsale{
     .fp-overflow{
-        display: inline-flex;
         overflow: hidden;
+        @media (max-width:1080px){
+            flex-direction: column;
+            &::before{
+                display: none;
+            }
+        }
     }
     &:nth-child(even){
         .fp-overflow{
             flex-direction: row-reverse;
+            @media (max-width:1080px){
+                flex-direction: column;
+                &::before{
+                    display: none;
+                }
+            }
         }
     }
     .hotsale_photo{
         width: calc(100% - 600px);
-        float: left;
         height: 100vh;
         overflow: hidden;
+        @media (max-width:1480px){
+            width: calc(100% - 480px);
+        }
+        @media (max-width:1080px){
+            width: 100%;
+            height: auto;
+            &.slick-dotted.slick-slider{
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
+            &.slick-initialized .slick-slide{
+                margin-bottom: -6px;
+            }
+        }
         .item{
             height: 100vh;
+            @media (max-width:1080px){
+                height: 0;
+                padding-bottom: 82%;
+            }
+        }
+        .slick-dots{
+            bottom: 20px;
+            li button:before{
+                opacity: .5;
+            }
+            li.slick-active button:before{
+                opacity: .9;
+            }
         }
     }
     .hotsale_intro{
         width: 600px;
-        float: right;
         background: url(../img/home-hotsale_bg.png) right center no-repeat;
         background-size: cover;
         text-align: left;
@@ -54,16 +100,22 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        // align-items: center;
+        @media (max-width:1480px){
+            width: 480px;
+        }
+        @media (max-width:1080px){
+            width: 100%;
+            background-position: right bottom;
+        }
         h6{
             margin-top: 12px;
         }
         p{
-            margin-top: 60px;
+            margin-top: 40px;
         }
         .hotsale_intro_info{
             text-align: left;
-            margin-top: 60px;
+            margin-top: 40px;
             .logo{
                 display: inline-flex;
                 img{
@@ -130,7 +182,7 @@
     .title{
         width: 115px;
         height: 400px;
-        float: left;
+        // float: left;
         text-align: left;
         display: flex;
         flex-direction: column;
@@ -164,10 +216,20 @@
 }
 .news{
     background-image: url(../img/home-news_bg.png);
+    .fp-overflow{
+        // flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .news_outerbox{
+        flex-direction: column;
+    }
     .news_frame{
+        display: flex;
+        justify-content: space-between;
         .news_list{
             width: calc(100% - 160px);
-            float: right;
+            // float: right;
             .item{
                 padding: 0 10px;
                 .news_info{
@@ -291,7 +353,17 @@
 }
 .progress{
     background: #231815;
+    .fp-overflow{
+        // flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .progress_outerbox{
+        flex-direction: column;
+    }
     .progress_frame{
+        display: flex;
+        justify-content: space-between;
         .progress_list{
             width: calc(100% - 160px);
             float: right;

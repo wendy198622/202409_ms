@@ -1,4 +1,8 @@
 #footer{
+    .fp-overflow{
+        display: block;
+        height: auto;
+    }
     nav{
         background: rgb(0,153,68);
         background: linear-gradient(100deg, rgba(0,153,68,1) 0%, rgba(29,32,136,1) 100%);
