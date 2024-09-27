@@ -1643,6 +1643,12 @@ header .logo a h1 span {
   position: relative;
 }
 
+@media (max-width: 600px) {
+  .progress .progress_outerbox .progress_frame .progress_list .item:nth-child(4) {
+    display: none;
+  }
+}
+
 .progress .progress_outerbox .progress_frame .progress_list .item:after {
   content: "";
   width: 1px;

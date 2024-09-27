@@ -392,7 +392,11 @@
                     display: flex;
                     justify-content: space-between;
                     position: relative;
-                    // align-items: center;
+                    @media (max-width:600px){
+                        &:nth-child(4){
+                            display: none;
+                        }
+                    }
                     &:after{
                         content: "";
                         width: 1px;
