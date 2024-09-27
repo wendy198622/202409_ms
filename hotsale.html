@@ -79,15 +79,17 @@
 					</ul>
 				</nav>
 			</div>
-            <div class="title">Hot Sale</div>
-            <h2 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay=".1s">在線熱銷 把握金質建築</h2>
-			<h5 class="wow fadeInUp mg0" data-wow-duration="2s" data-wow-delay=".8s">每一嶄新作品，我們都傾力用心</h5>
-			<h5 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay=".8s">以人為本，設計未來</h5>
-			<p class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.2s">
-                我們深知，建築的成功不僅取決於其外在的形象，更在於它如何與人、環境和社區產生深刻的聯結。<br>
-                從人出發，我們在設計和規劃中充分考慮使用者的需求與期望，確保每一個空間都能夠舒適地融入其生活中。<br>
-                我們專注於每一個細節，從空間配置到環境整合，旨在創造出真正符合人們需求的建築。
-			</p>
+            <div class="page_title">
+				<div class="title">Hot Sale</div>
+				<h2 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay=".1s">在線熱銷 把握金質建築</h2>
+				<h5 class="wow fadeInUp mg0" data-wow-duration="2s" data-wow-delay=".8s">每一嶄新作品，我們都傾力用心</h5>
+				<h5 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay=".8s">以人為本，設計未來</h5>
+				<p class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.2s">
+					我們深知，建築的成功不僅取決於其外在的形象，更在於它如何與人、環境和社區產生深刻的聯結。<br>
+					從人出發，我們在設計和規劃中充分考慮使用者的需求與期望，確保每一個空間都能夠舒適地融入其生活中。<br>
+					我們專注於每一個細節，從空間配置到環境整合，旨在創造出真正符合人們需求的建築。
+				</p>
+			</div>
 		</div>
 		<div class="section hotsale"> 
 			<div class="hotsale_photo">
@@ -101,12 +103,7 @@
 			<div class="hotsale_intro">
 				<h3 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay=".1s">公園禮</h3>
 				<h6 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay=".3s">NATURE VILLA 森巴黎NO.13</h6>
-				<p class="wow fadeInUp" data-wow-duration="2s" data-wow-delay=".8s">有土斯有財成漲<br>
-					多10分鐘，大樓換透天<br>
-					<br>						
-					南向S廊道軸心<br>
-					高雄新矽谷，增值未來式<br>
-					<br>
+				<p class="wow fadeInUp" data-wow-duration="2s" data-wow-delay=".8s">
 					新台17串市心<br>
 					高大特區，藝文百貨生活<br>
 					<br>
@@ -145,12 +142,7 @@
 			<div class="hotsale_intro">
 				<h3 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay=".1s">公園禮</h3>
 				<h6 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay=".3s">NATURE VILLA 森巴黎NO.13</h6>
-				<p class="wow fadeInUp" data-wow-duration="2s" data-wow-delay=".8s">有土斯有財成漲<br>
-					多10分鐘，大樓換透天<br>
-					<br>						
-					南向S廊道軸心<br>
-					高雄新矽谷，增值未來式<br>
-					<br>
+				<p class="wow fadeInUp" data-wow-duration="2s" data-wow-delay=".8s">
 					新台17串市心<br>
 					高大特區，藝文百貨生活<br>
 					<br>
@@ -189,12 +181,7 @@
 			<div class="hotsale_intro">
 				<h3 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay=".1s">公園禮</h3>
 				<h6 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay=".3s">NATURE VILLA 森巴黎NO.13</h6>
-				<p class="wow fadeInUp" data-wow-duration="2s" data-wow-delay=".8s">有土斯有財成漲<br>
-					多10分鐘，大樓換透天<br>
-					<br>						
-					南向S廊道軸心<br>
-					高雄新矽谷，增值未來式<br>
-					<br>
+				<p class="wow fadeInUp" data-wow-duration="2s" data-wow-delay=".8s">
 					新台17串市心<br>
 					高大特區，藝文百貨生活<br>
 					<br>
@@ -233,12 +220,7 @@
 			<div class="hotsale_intro">
 				<h3 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay=".1s">公園禮</h3>
 				<h6 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay=".3s">NATURE VILLA 森巴黎NO.13</h6>
-				<p class="wow fadeInUp" data-wow-duration="2s" data-wow-delay=".8s">有土斯有財成漲<br>
-					多10分鐘，大樓換透天<br>
-					<br>						
-					南向S廊道軸心<br>
-					高雄新矽谷，增值未來式<br>
-					<br>
+				<p class="wow fadeInUp" data-wow-duration="2s" data-wow-delay=".8s">
 					新台17串市心<br>
 					高大特區，藝文百貨生活<br>
 					<br>
@@ -344,7 +326,10 @@
 	
 	});
 
-	$('.hotsale_photo').slick();
+	$('.hotsale_photo').slick({
+  		dots: true,
+		arrows: false
+	});
 
 	$('.news_list').slick({
 		dots: true,

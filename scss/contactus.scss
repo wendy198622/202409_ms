@@ -24,10 +24,17 @@
     ul{
         width: 600px;
         margin: 60px auto;
+        @media (max-width:640px){
+            width: 96%;
+        }
         li{
             display: flex;
             align-items: center;
             margin-bottom: 20px;
+            @media (max-width:600px){
+                flex-direction: column;
+                margin-bottom: 40px;
+            }
 
             .topic{
                 display: flex;
@@ -47,6 +54,9 @@
             .content{
                 display: flex;
                 align-items: center;
+                @media (max-width:600px){
+                    margin-top: 10px;
+                }
                 h6{
                     color: #fff;
                     display: inline-block;
@@ -64,78 +74,88 @@
 .form{
     // background: #231815;
     background-image: url(../img/contactus_bg.png);
-    .form_frame{
-        max-width: 800px;
-        .item{
-            width: 100%;
-            text-align: left;
-            input, select, textarea{
+    .fp-overflow{
+        align-items: center;
+        justify-content: center;
+    }
+    .form_outerbox{
+        width: 100%;
+        .form_frame{
+            max-width: 760px;
+            @media (max-width:800px){
+                width: 96%;
+            }
+            .item{
                 width: 100%;
-                height: 52px;
-                margin-bottom: 16px;
-                font-size: 18px;
-                line-height: 160%;
-                font-family: $font-sans;
-                letter-spacing: 2px;
-                &:checked, &:focus{
-                    outline: 0;
-                    border: 0;
+                text-align: left;
+                input, select, textarea{
+                    width: 100%;
+                    height: 52px;
+                    margin-bottom: 16px;
+                    font-size: 18px;
+                    line-height: 160%;
+                    font-family: $font-sans;
+                    letter-spacing: 2px;
+                    &:checked, &:focus{
+                        outline: 0;
+                        border: 0;
+                    }
                 }
-            }
-            textarea{
-                width: 100%;
-                height: 120px;
-                resize: none;
-                display: block;
-            }
-            ::placeholder{
-                font-size: 18px;
-                line-height: 160%;
-                color: #231815;
-                font-weight: 400;
-                font-family: $font-sans;
-
-            }
-            input[type="checkbox"]{
-                width: 20px;
-                height: 20px;
-                background: #fff;
-                padding: 0;
-                margin-right: 10px;
-                float: left;
-                &:checked{
-                    background-image: url(../img/check.svg);
-                    background-repeat: no-repeat;
-                    background-position: center center;
+                textarea{
+                    width: 100%;
+                    height: 120px;
+                    resize: none;
+                    display: block;
                 }
-            }
-            .checktxt{
-                width: calc(100% - 40px);
-                font-family: $font-sans;
-                letter-spacing: 3px;
-                color: #fff;
-
-                a{
-                    display: inline-block;
-                    font-size: 14px;
-                    text-decoration: underline;
+                ::placeholder{
+                    font-size: 18px;
+                    line-height: 160%;
+                    color: #231815;
+                    font-weight: 400;
+                    font-family: $font-sans;
+    
+                }
+                input[type="checkbox"]{
+                    width: 20px;
+                    height: 20px;
+                    background: #fff;
+                    padding: 0;
+                    margin-right: 10px;
+                    float: left;
+                    &:checked{
+                        background-image: url(../img/check.svg);
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                    }
+                }
+                .checktxt{
+                    width: calc(100% - 40px);
+                    font-family: $font-sans;
+                    letter-spacing: 3px;
                     color: #fff;
+    
+                    a{
+                        display: inline-block;
+                        font-size: 14px;
+                        text-decoration: underline;
+                        color: #fff;
+                    }
                 }
             }
-        }
-        button{
-            width: 180px;
-            margin: 40px auto;
-            background: #fff;
-            color: #231815;
-            font-size: 28px;
-            line-height: 160%;
-            font-weight: 500;
-            letter-spacing: 2px;
-            display: block;
-            &:hover{
-                cursor: pointer;
-        
+            button{
+                width: 180px;
+                margin: 40px auto;
+                background: #fff;
+                color: #231815;
+                font-size: 28px;
+                line-height: 160%;
+                font-weight: 500;
+                letter-spacing: 2px;
+                display: block;
+                &:hover{
+                    cursor: pointer;
+            
+                }
             }
         }
     }

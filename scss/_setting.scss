@@ -25,17 +25,7 @@ body{ font-family: "Noto Serif TC", serif;}
 *{ box-sizing: border-box; font-family: "Noto Serif TC", serif; color: #231815;}
 a, a:hover, a:active, a:visited{ text-decoration: none; display: block; transition: all .3s; outline: 0;}
 img{ width: 100%; display: block;}
-.fp-overflow{
-    display: flex;
-    overflow: hidden;
-    position: relative;
-    height: 100vh;
-    &:before{
-        content: "";
-        width: 0;
-        height: 100vh;
-    }
-}
+
 
 .pc{ display: block;}
 .mob{ display: none;}
@@ -207,6 +197,81 @@ input, button, select, textarea{
         cursor: pointer;
     }
 }
+
+.fp-overflow{
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+    &:before{
+        content: "";
+        width: 0;
+        height: 100vh;
+    }
+}
+
+#section0{
+    .fp-overflow{
+        justify-content: center;
+        .page_title{
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            @media (max-width:1440px){
+                width: 90%;
+                padding-left: 120px;
+            }
+            @media (max-width:1080px){
+                width: 96%;
+                padding-left: 0;
+            }
+            .title{
+                color: #fff;
+                opacity: .1;
+                text-align: center;
+                text-transform: uppercase;
+                font-size: 112px;
+                font-weight: 600;
+                margin-bottom: -60px;
+                font-family: $font-en;
+                @media (max-width:800px){
+                    font-size: 100px;
+                    margin-bottom: -50px;
+                }
+                @media (max-width:600px){
+                    font-size: 60px;
+                    margin-bottom: -40px;
+                }
+                @media (max-width:400px){
+                    font-size: 40px;
+                    margin-bottom: -20px;
+                }
+            }
+            h2{
+                margin-bottom: 40px;
+                @media (max-width:600px){
+                    margin-bottom: 20px;
+                }
+            }
+            h5{
+                margin: 20px 0 40px;
+                @media (max-width:600px){
+                    margin: 20px 0;
+                }
+                &.mg0{
+                    margin: 0;
+                }
+            }
+            p{
+                text-align: center;
+                margin-top: 0;
+            }
+        }
+    }
+}
+
 .frame{
     max-width: 1440px;
     margin: 0 auto;

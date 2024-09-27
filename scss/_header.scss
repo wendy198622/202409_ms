@@ -17,6 +17,7 @@ header{
     }
     @media (max-width:600px){
         width: 280px;
+        padding: 20px 0 20px 40px;
     }
     .logo{
         a{
@@ -70,7 +71,7 @@ header{
     }
 }
 #menu{  
-    width: calc(100% - 160px);
+    // width: calc(100% - 160px);
     height: auto;
     position: absolute;
     top: 0;
@@ -83,14 +84,17 @@ header{
     align-items: flex-start;
     background: none;
     @media (max-width:1080px){
+        // width: calc(100% - 480px);
         background: #fff;
         padding: 24px 40px;
     }
     @media (max-width:960px){
+        // width: calc(100% - 380px);
         padding: 11px 40px;
     }
     @media (max-width:600px){
-        padding: 7px 40px;
+        // width: calc(100% - 280px);
+        padding: 7px 20px 7px 0;
     }
     &.open{
         z-index: 10;
@@ -111,7 +115,7 @@ header{
         transition: .5s ease-in-out;
         cursor: pointer;
         @media (max-width:1080px){
-            margin: 17px 0;
+            margin: 18px 0;
         }        
         @media (max-width:960px){
             height: 30px;
@@ -191,6 +195,7 @@ header{
     nav{
         margin-right: 20px;
         opacity: 0;
+        visibility: hidden;
         height: 0;
         @media (max-width:1080px){
             width: 100%;
@@ -215,6 +220,7 @@ header{
                 opacity: 0;
                 @media (max-width:1080px){
                     width: 100%;
+                    padding: 6px 0;
                 }
 
                 &:before{
@@ -253,11 +259,15 @@ header{
 
                 &:hover{
                     background: #231815;
+                    @media (max-width:1080px){
+                        background: rgba(0,0,0,.1);
+                    }
                 }
             }
         }
         &.open{
             opacity: 1;
+            visibility: visible;
             height: auto;
             ul{
                 li{

@@ -107,9 +107,6 @@
 				<h3 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay=".1s">公園禮</h3>
 				<h6 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay=".3s">NATURE VILLA 森巴黎NO.13</h6>
 				<p class="wow fadeInUp" data-wow-duration="2s" data-wow-delay=".8s">
-					南向S廊道軸心<br>
-					高雄新矽谷，增值未來式<br>
-					<br>
 					新台17串市心<br>
 					高大特區，藝文百貨生活<br>
 					<br>
@@ -149,9 +146,6 @@
 				<h3 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay=".1s">公園禮</h3>
 				<h6 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay=".3s">NATURE VILLA 森巴黎NO.13</h6>
 				<p class="wow fadeInUp" data-wow-duration="2s" data-wow-delay=".8s">
-					南向S廊道軸心<br>
-					高雄新矽谷，增值未來式<br>
-					<br>
 					新台17串市心<br>
 					高大特區，藝文百貨生活<br>
 					<br>
@@ -182,10 +176,14 @@
 			<div class="news_outerbox">
 				<div class="news_frame frame">
 					<div class="title wow fadeInUp" data-wow-duration="2s" data-wow-delay=".1s">
-						<h4>
+						<h4 class="pc">
 							最新<br>消息
 							<div class="en">latest news</div>
 						</h4>
+						<h4 class="mob">
+								最新消息
+								<div class="en">latest news</div>
+							</h4>
 					</div>
 					<div class="news_list">
 						<div class="item wow fadeInUp" data-wow-duration="2s" data-wow-delay=".3s">
@@ -315,8 +313,12 @@
 			<div class="progress_outerbox">
 				<div class="progress_frame frame">
 					<div class="title wow fadeInUp" data-wow-duration="2s" data-wow-delay=".1s">
-						<h4>
+						<h4 class="pc">
 							工程<br>進度
+							<div class="en">case progress</div>
+						</h4>
+						<h4 class="mob">
+							工程進度
 							<div class="en">case progress</div>
 						</h4>
 					</div>
@@ -501,7 +503,21 @@
 		arrows: false,
   		speed: 300,
 		slidesToShow: 4,
-  		slidesToScroll: 1
+  		slidesToScroll: 1,
+		responsive: [
+			{
+			breakpoint: 1081,
+			settings: {
+				slidesToShow: 2
+			}
+			},
+			{
+			breakpoint: 601,
+			settings: {
+				slidesToShow: 1
+			}
+			}
+		]
 	});
 
 

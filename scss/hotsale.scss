@@ -7,29 +7,6 @@
 
 #section0{
     background-image: url(../img/hotsale_bg.png);
-
-    .title{
-        color: #fff;
-        opacity: .1;
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 120px;
-        font-weight: 600;
-        margin-bottom: -60px;
-        font-family: $font-en;
-    }
-    h2{
-        // margin-bottom: 40px;
-    }
-    h5{
-        margin: 40px 0;
-        &.mg0{
-            margin: 0;
-        }
-    }
-    p{
-        text-align: center;
-    }
 }
 .aboutus{
     background: rgb(27,117,68);
@@ -42,22 +19,63 @@
     }
 }
 .hotsale{
+    @media (max-width:600px){
+        background: url(../img/home-hotsale_bg.png) right bottom no-repeat;
+        background-size: 100% auto;
+    }
     .fp-overflow{
-        display: inline-flex;
         overflow: hidden;
+        @media (max-width:1080px){
+            flex-direction: column;
+            &::before{
+                display: none;
+            }
+        }
     }
     &:nth-child(even){
         .fp-overflow{
             flex-direction: row-reverse;
+            @media (max-width:1080px){
+                flex-direction: column;
+                &::before{
+                    display: none;
+                }
+            }
         }
     }
     .hotsale_photo{
         width: calc(100% - 600px);
-        float: left;
         height: 100vh;
         overflow: hidden;
+        @media (max-width:1480px){
+            width: calc(100% - 480px);
+        }
+        @media (max-width:1080px){
+            width: 100%;
+            height: auto;
+            &.slick-dotted.slick-slider{
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
+            &.slick-initialized .slick-slide{
+                margin-bottom: -6px;
+            }
+        }
         .item{
             height: 100vh;
+            @media (max-width:1080px){
+                height: 0;
+                padding-bottom: 82%;
+            }
+        }
+        .slick-dots{
+            bottom: 20px;
+            li button:before{
+                opacity: .5;
+            }
+            li.slick-active button:before{
+                opacity: .9;
+            }
         }
     }
     .hotsale_intro{
@@ -70,16 +88,28 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        // align-items: center;
+        @media (max-width:1480px){
+            width: 480px;
+            padding: 20px 80px;
+        }
+        @media (max-width:1080px){
+            width: 100%;
+            background-position: right bottom;
+            padding: 20px 60px;
+        }
+        @media (max-width:600px){
+            padding: 20px 40px;
+            background: none;
+        }
         h6{
             margin-top: 12px;
         }
         p{
-            margin-top: 60px;
+            margin-top: 40px;
         }
         .hotsale_intro_info{
             text-align: left;
-            margin-top: 60px;
+            margin-top: 40px;
             .logo{
                 display: inline-flex;
                 img{
