@@ -266,7 +266,9 @@ input, button, select, textarea {
 }
 
 @supports (-webkit-overflow-scrolling: touch) {
-  height: auto;
+  .fp-overflow {
+    height: auto;
+  }
 }
 
 #section0 .fp-overflow {
