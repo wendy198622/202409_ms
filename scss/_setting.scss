@@ -287,6 +287,11 @@ input, button, select, textarea{
     background-attachment: fixed;
     background-position: center center;
 }
+@supports (-webkit-overflow-scrolling: touch) {
+    .section, .slide {
+      background-attachment: scroll;
+    }
+}
 
 .slick-prev{
     left: 20px;
