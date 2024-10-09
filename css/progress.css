@@ -1137,20 +1137,23 @@ header .logo a h1 span {
 
 .progress .fp-overflow {
   height: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.progress .projects_outerbox .filter {
+.progress .progress_outerbox .filter {
   position: relative;
   z-index: 10;
 }
 
-.progress .projects_outerbox .filter .select-hidden {
+.progress .progress_outerbox .filter .select-hidden {
   display: none;
   visibility: hidden;
   padding-right: 10px;
 }
 
-.progress .projects_outerbox .filter .select {
+.progress .progress_outerbox .filter .select {
   cursor: pointer;
   display: inline-block;
   position: relative;
@@ -1164,17 +1167,17 @@ header .logo a h1 span {
   background: transparent;
 }
 
-.progress .projects_outerbox .filter .select + .select {
+.progress .progress_outerbox .filter .select + .select {
   margin-left: 20px;
 }
 
 @media (max-width: 400px) {
-  .progress .projects_outerbox .filter .select + .select {
+  .progress .progress_outerbox .filter .select + .select {
     margin-left: 0;
   }
 }
 
-.progress .projects_outerbox .filter .select-styled {
+.progress .progress_outerbox .filter .select-styled {
   position: absolute;
   top: 0;
   right: 0;
@@ -1190,7 +1193,7 @@ header .logo a h1 span {
   font-weight: 600;
 }
 
-.progress .projects_outerbox .filter .select-styled:after {
+.progress .progress_outerbox .filter .select-styled:after {
   content: "";
   width: 0;
   height: 0;
@@ -1201,12 +1204,12 @@ header .logo a h1 span {
   right: 10px;
 }
 
-.progress .projects_outerbox .filter .select-styled:active:after, .progress .projects_outerbox .filter .select-styled.active:after {
+.progress .progress_outerbox .filter .select-styled:active:after, .progress .progress_outerbox .filter .select-styled.active:after {
   top: 12px;
   border-color: transparent transparent #fff transparent;
 }
 
-.progress .projects_outerbox .filter .select-options {
+.progress .progress_outerbox .filter .select-options {
   display: none;
   position: absolute;
   top: 100%;
@@ -1221,7 +1224,7 @@ header .logo a h1 span {
   border-right: 1px solid #fff;
 }
 
-.progress .projects_outerbox .filter .select-options li {
+.progress .progress_outerbox .filter .select-options li {
   margin: 0;
   padding: 12px 0;
   text-indent: 15px;
@@ -1229,20 +1232,20 @@ header .logo a h1 span {
   transition: all 0.15s ease-in;
 }
 
-.progress .projects_outerbox .filter .select-options li:hover, .progress .projects_outerbox .filter .select-options li.is-selected {
+.progress .progress_outerbox .filter .select-options li:hover, .progress .progress_outerbox .filter .select-options li.is-selected {
   color: #009944;
   background: #fff;
 }
 
-.progress .projects_outerbox .filter .select-options li[rel="hide"] {
+.progress .progress_outerbox .filter .select-options li[rel="hide"] {
   display: none;
 }
 
-.progress .projects_outerbox .progress_frame {
+.progress .progress_outerbox .progress_frame {
   margin-top: 60px;
 }
 
-.progress .projects_outerbox .progress_frame .pagingBox {
+.progress .progress_outerbox .progress_frame .pagingBox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1253,32 +1256,32 @@ header .logo a h1 span {
           align-items: flex-start;
 }
 
-.progress .projects_outerbox .progress_frame .pagingBox .item {
+.progress .progress_outerbox .progress_frame .pagingBox .item {
   width: calc((100% - 80px) / 4);
   margin: 0 10px 60px;
   text-align: left;
 }
 
 @media (max-width: 1240px) {
-  .progress .projects_outerbox .progress_frame .pagingBox .item {
+  .progress .progress_outerbox .progress_frame .pagingBox .item {
     width: calc((100% - 40px) / 2);
   }
 }
 
 @media (max-width: 600px) {
-  .progress .projects_outerbox .progress_frame .pagingBox .item {
+  .progress .progress_outerbox .progress_frame .pagingBox .item {
     width: calc((100% - 20px) / 1);
   }
 }
 
-.progress .projects_outerbox .progress_frame .pagingBox .item .progress_photo {
+.progress .progress_outerbox .progress_frame .pagingBox .item .progress_photo {
   width: 100%;
   height: 0;
   padding-bottom: 67%;
   position: relative;
 }
 
-.progress .projects_outerbox .progress_frame .pagingBox .item .progress_photo ul {
+.progress .progress_outerbox .progress_frame .pagingBox .item .progress_photo ul {
   width: calc( 100% - 20px);
   text-align: right;
   position: absolute;
@@ -1286,7 +1289,7 @@ header .logo a h1 span {
   right: 10px;
 }
 
-.progress .projects_outerbox .progress_frame .pagingBox .item .progress_photo ul li {
+.progress .progress_outerbox .progress_frame .pagingBox .item .progress_photo ul li {
   display: inline-block;
   font-size: 14px;
   color: #fff;
@@ -1295,16 +1298,16 @@ header .logo a h1 span {
   letter-spacing: 1px;
 }
 
-.progress .projects_outerbox .progress_frame .pagingBox .item .progress_photo ul li:nth-child(1) {
+.progress .progress_outerbox .progress_frame .pagingBox .item .progress_photo ul li:nth-child(1) {
   background: #009944;
 }
 
-.progress .projects_outerbox .progress_frame .pagingBox .item .progress_photo ul li:nth-child(2) {
+.progress .progress_outerbox .progress_frame .pagingBox .item .progress_photo ul li:nth-child(2) {
   background: #1d2088;
   margin-left: 4px;
 }
 
-.progress .projects_outerbox .progress_frame .pagingBox .item .progress_date {
+.progress .progress_outerbox .progress_frame .pagingBox .item .progress_date {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1318,14 +1321,14 @@ header .logo a h1 span {
   position: relative;
 }
 
-.progress .projects_outerbox .progress_frame .pagingBox .item .progress_date hr {
+.progress .progress_outerbox .progress_frame .pagingBox .item .progress_date hr {
   width: calc(100% - 120px);
   margin: 0;
   height: 1px;
   border-color: #fff;
 }
 
-.progress .projects_outerbox .progress_frame .pagingBox .item .progress_date .date {
+.progress .progress_outerbox .progress_frame .pagingBox .item .progress_date .date {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1335,7 +1338,7 @@ header .logo a h1 span {
           flex-direction: column;
 }
 
-.progress .projects_outerbox .progress_frame .pagingBox .item .progress_date .date .year, .progress .projects_outerbox .progress_frame .pagingBox .item .progress_date .date .month {
+.progress .progress_outerbox .progress_frame .pagingBox .item .progress_date .date .year, .progress .progress_outerbox .progress_frame .pagingBox .item .progress_date .date .month {
   font-size: 20px;
   color: #fff;
   font-weight: 600;
@@ -1343,27 +1346,27 @@ header .logo a h1 span {
   text-transform: uppercase;
 }
 
-.progress .projects_outerbox .progress_frame .pagingBox .item .progress_date .date .year {
+.progress .progress_outerbox .progress_frame .pagingBox .item .progress_date .date .year {
   margin-bottom: -4px;
 }
 
-.progress .projects_outerbox .progress_frame .pagingBox .item .progress_date .date .month {
+.progress .progress_outerbox .progress_frame .pagingBox .item .progress_date .date .month {
   letter-spacing: 3px;
 }
 
-.progress .projects_outerbox .progress_frame .pagingBox .item .progress_date .day {
+.progress .progress_outerbox .progress_frame .pagingBox .item .progress_date .day {
   font-size: 54px;
   line-height: 1;
   color: #fff;
   font-weight: 700;
 }
 
-.progress .projects_outerbox .progress_frame .pagingBox .item .progress_info h5 {
+.progress .progress_outerbox .progress_frame .pagingBox .item .progress_info h5 {
   text-align: left;
   margin-top: 20px;
 }
 
-.progress .projects_outerbox .progress_frame .pagingBox .item .progress_info p {
+.progress .progress_outerbox .progress_frame .pagingBox .item .progress_info p {
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -1371,7 +1374,7 @@ header .logo a h1 span {
   margin-top: 10px;
 }
 
-.progress .projects_outerbox .progress_frame .pagingBox .item .progress_link {
+.progress .progress_outerbox .progress_frame .pagingBox .item .progress_link {
   background: #1b7544;
   background: linear-gradient(100deg, #1b7544 0%, #2b326a 100%);
   border-radius: 10px;
@@ -1380,7 +1383,7 @@ header .logo a h1 span {
   padding: 6px 12px 4px;
 }
 
-.progress .projects_outerbox .progress_frame .pagingBox .item .progress_link a {
+.progress .progress_outerbox .progress_frame .pagingBox .item .progress_link a {
   display: block;
   margin: 0 auto;
   text-transform: uppercase;
@@ -1393,7 +1396,7 @@ header .logo a h1 span {
   letter-spacing: 2px;
 }
 
-.progress .projects_outerbox .progress_frame .pagingBox .item .progress_link a span {
+.progress .progress_outerbox .progress_frame .pagingBox .item .progress_link a span {
   vertical-align: middle;
   margin-left: 6px;
   color: #fff;
@@ -1402,7 +1405,7 @@ header .logo a h1 span {
   transition: all .3s;
 }
 
-.progress .projects_outerbox .progress_frame .pagingBox .item .progress_link a:hover span {
+.progress .progress_outerbox .progress_frame .pagingBox .item .progress_link a:hover span {
   -webkit-transform: translateX(10px);
           transform: translateX(10px);
 }

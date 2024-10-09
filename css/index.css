@@ -1559,7 +1559,7 @@ header .logo a h1 span {
   overflow: hidden;
 }
 
-.news .news_outerbox .news_frame .news_list .item .news_content a {
+.news .news_outerbox .news_frame .news_list .item .news_content .link {
   width: auto;
   margin: 0;
   text-transform: uppercase;
@@ -1573,7 +1573,7 @@ header .logo a h1 span {
   letter-spacing: 2px;
 }
 
-.news .news_outerbox .news_frame .news_list .item .news_content a span {
+.news .news_outerbox .news_frame .news_list .item .news_content .link span {
   vertical-align: middle;
   margin-left: 6px;
   color: #fff;

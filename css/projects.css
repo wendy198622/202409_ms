@@ -1136,6 +1136,9 @@ header .logo a h1 span {
 
 .projects .fp-overflow {
   height: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .projects .projects_outerbox .filter {
