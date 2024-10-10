@@ -145,7 +145,7 @@ header{
             -o-transition: .25s ease-in-out;
             transition: .25s ease-in-out;
             @media (max-width:1080px){
-                background: #231815;
+                // background: #231815;
             }
             
             &:nth-child(1) {
@@ -171,6 +171,7 @@ header{
                 z-index: 10;
             }
             span{
+                background: #000;
                 &:nth-child(1) {
                     top: 18px;
                     width: 0%;

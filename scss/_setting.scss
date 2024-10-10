@@ -235,6 +235,9 @@ input, button, select, textarea{
             @media (max-width:1080px){
                 display: block;
             }
+            @media (max-width:800px){
+                height: 100px;
+            }
         }
         .page_title{
             width: 75%;
