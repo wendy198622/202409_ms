@@ -278,6 +278,7 @@ input, button, select, textarea {
 }
 
 #section0 .fp-overflow .page_title {
+  width: 75%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;

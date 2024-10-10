@@ -88,7 +88,9 @@
 							<h6>客服專線</h6>
 						</div>
 						<div class="content">
-							<h6>03-3886838</h6>
+							<a href="tel:033886838">
+								<h6>03-3886838</h6>
+							</a>
 						</div>
 					</li>
 					<li>
@@ -99,7 +101,9 @@
 							<h6>公司地址</h6>
 						</div>
 						<div class="content">
-							<h6>桃園市桃園區三民路三段350巷3號1樓</h6>
+							<a href="https://maps.app.goo.gl/kzwcEczH7zmXuAmB7" target="_blank">
+								<h6>桃園市桃園區三民路三段350巷3號1樓</h6>
+							</a>
 						</div>
 					</li>
 					<li>
@@ -110,7 +114,9 @@
 							<h6>官方網站</h6>
 						</div>
 						<div class="content">
-							<h6>xxxxxxxxxx.com.tw</h6>
+							<a href="https://msbuild.com.tw/">
+								<h6>msbuild.com.tw</h6>
+							</a>
 						</div>
 					</li>
 					<li>
@@ -121,10 +127,10 @@
 							<h6>社群媒體</h6>
 						</div>
 						<div class="content">
-							<a href="#">
+							<a class="social" href="#" target="_blank">
 								<img src="img/facebook.svg" alt="">
 							</a>
-							<a href="#">
+							<a class="social" href="#" target="_blank">
 								<img src="img/line.svg" alt="">
 							</a>
 						</div>
@@ -136,6 +142,15 @@
 		<div class="section form" id="section1">
 			<div class="form_outerbox">
 				<div class="form_frame frame">
+					<div class="item selectbox wow fadeInUp" data-wow-delay=".3s">
+						<select name="type" id="type-select">
+							<option value="hide">選擇建案</option>
+							<option value="projectA">建案A</option>
+							<option value="projectB">建案B</option>
+							<option value="projectC">建案C</option>
+							<option value="others">其他詢問</option>
+						</select>
+					</div>
 					<div class="item wow fadeInUp" data-wow-delay=".3s">
 						<input type="text" v-model="name" name="name" placeholder="* 貴賓姓名" required />
 					</div>
@@ -249,6 +264,58 @@
 		slidesToShow: 4,
   		slidesToScroll: 1
 	});
+
+	
+	//select
+    $('select').each(function(){
+        var $this = $(this), numberOfOptions = $(this).children('option').length;
+    
+        $this.addClass('select-hidden'); 
+        $this.wrap('<div class="select"></div>');
+        $this.after('<div class="select-styled"></div>');
+
+        var $styledSelect = $this.next('div.select-styled');
+        $styledSelect.text($this.children('option').eq(0).text());
+    
+        var $list = $('<ul />', {
+            'class': 'select-options'
+        }).insertAfter($styledSelect);
+    
+        for (var i = 0; i < numberOfOptions; i++) {
+            $('<li />', {
+                text: $this.children('option').eq(i).text(),
+                rel: $this.children('option').eq(i).val()
+            }).appendTo($list);
+            if ($this.children('option').eq(i).is(':selected')){
+            $('li[rel="' + $this.children('option').eq(i).val() + '"]').addClass('is-selected')
+            }
+        }
+    
+        var $listItems = $list.children('li');
+    
+        $styledSelect.click(function(e) {
+            e.stopPropagation();
+            $('div.select-styled.active').not(this).each(function(){
+                $(this).removeClass('active').next('ul.select-options').hide();
+            });
+            $(this).toggleClass('active').next('ul.select-options').toggle();
+        });
+    
+        $listItems.click(function(e) {
+            e.stopPropagation();
+            $styledSelect.text($(this).text()).removeClass('active');
+            $this.val($(this).attr('rel'));
+        $list.find('li.is-selected').removeClass('is-selected');
+        $list.find('li[rel="' + $(this).attr('rel') + '"]').addClass('is-selected');
+            $list.hide();
+        });
+    
+        $(document).click(function() {
+            $styledSelect.removeClass('active');
+            $list.hide();
+        });
+
+    });
 
 
 
