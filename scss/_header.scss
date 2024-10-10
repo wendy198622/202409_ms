@@ -11,6 +11,7 @@ header{
         width: 480px;
         height: auto;
         padding: 20px 40px;
+        background: transparent;
     }
     @media (max-width:960px){
         width: 380px;
@@ -73,7 +74,7 @@ header{
 #menu{  
     // width: calc(100% - 160px);
     height: auto;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     left: auto;
@@ -85,7 +86,7 @@ header{
     background: none;
     @media (max-width:1080px){
         // width: calc(100% - 480px);
-        background: #fff;
+        // background: #fff;
         padding: 24px 40px;
     }
     @media (max-width:960px){
@@ -99,6 +100,11 @@ header{
     &.open{
         z-index: 10;
         width: 100%;
+        background: rgb(0,0,0);
+        background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,.6) 75%, rgba(0,0,0,0) 100%);
+        @media (max-width:1080px){
+            background: #fff;
+        }
     }
     .nav-trigger {
         width: 40px;
@@ -284,38 +290,47 @@ header{
 
     &.home{
 
-        .nav-trigger {
+        // .nav-trigger {
             
-            span {
-                background: #231815;
-            }
-        }
+        //     span {
+        //         background: #231815;
+        //     }
+        // }
+        // &.open{
 
-        nav{
-            ul {
+        //     .nav-trigger {
+                
+        //         span {
+        //             background: #fff;
+        //         }
+        //     }
+        // }
 
-                li {
+        // nav{
+        //     ul {
 
-                    &:before{
-                        background: #231815;
-                    }
+        //         li {
 
-                    a{
+        //             &:before{
+        //                 background: #231815;
+        //             }
+
+        //             a{
                     
-                        .nav-label {
-                            color: #231815;
-                            @media (max-width:1080px){
-                                // color: #fff;
-                            }
-                        }
-                    }
+        //                 .nav-label {
+        //                     color: #231815;
+        //                     @media (max-width:1080px){
+        //                         // color: #fff;
+        //                     }
+        //                 }
+        //             }
 
-                    &:hover{
-                        background: #fff;
-                    }
-                }
-            }
-        }
+        //             &:hover{
+        //                 background: #fff;
+        //             }
+        //         }
+        //     }
+        // }
     }
     
 
