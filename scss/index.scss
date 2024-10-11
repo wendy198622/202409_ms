@@ -6,17 +6,12 @@
 }
 
 #section0{
-    background-image: url(../img/kv_bg.png);
-    // animation: slidein 10s linear infinite alternate forwards;
-    @media (max-width:1080px){
-        background-image: url(../img/kv_bg_mob.png);
-        background-position: center bottom;
-    }
-
-    // @keyframes slidein {
-    //     from {background-position: center; background-size: 140%; }
-    //     to {background-position: center; background-size: 120%;}
-        
+    // .kv1{
+    //     background-image: url(../img/kv_bg.png);
+    //     @media (max-width:1080px){
+    //         background-image: url(../img/kv_bg_mob.png);
+    //         background-position: center bottom;
+    //     }
     // }
 }
 .aboutus{
@@ -543,4 +538,7 @@
             }
         }
     }
+}
+#fp-nav ul li a span, .fp-slidesNav ul li a span{
+    background: #fff;
 }

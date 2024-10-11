@@ -1143,17 +1143,6 @@ header .logo a h1 span {
   width: 0 !important;
 }
 
-#section0 {
-  background-image: url(../img/kv_bg.png);
-}
-
-@media (max-width: 1080px) {
-  #section0 {
-    background-image: url(../img/kv_bg_mob.png);
-    background-position: center bottom;
-  }
-}
-
 .aboutus {
   background: #1b7544;
   background: linear-gradient(100deg, #1b7544 0%, #2b326a 100%);
@@ -1873,5 +1862,9 @@ header .logo a h1 span {
 .progress .progress_outerbox .allprogress:hover span {
   -webkit-transform: translateX(10px);
           transform: translateX(10px);
+}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+  background: #fff;
 }
 /*# sourceMappingURL=index.css.map */

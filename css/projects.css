@@ -1343,14 +1343,8 @@ header .logo a h1 span {
   display: inline-block;
   margin-top: 20px;
   padding: 6px 12px 4px;
-}
-
-.projects .projects_outerbox .project_frame .pagingBox .item .project_link a {
-  display: block;
-  margin: 0 auto;
   text-transform: uppercase;
   vertical-align: middle;
-  color: transparent;
   color: #fff;
   text-align: center;
   font-family: "Playfair Display", serif;
@@ -1358,7 +1352,7 @@ header .logo a h1 span {
   letter-spacing: 2px;
 }
 
-.projects .projects_outerbox .project_frame .pagingBox .item .project_link a span {
+.projects .projects_outerbox .project_frame .pagingBox .item .project_link span {
   vertical-align: middle;
   margin-left: 6px;
   color: #fff;
@@ -1367,7 +1361,7 @@ header .logo a h1 span {
   transition: all .3s;
 }
 
-.projects .projects_outerbox .project_frame .pagingBox .item .project_link a:hover span {
+.projects .projects_outerbox .project_frame .pagingBox .item:hover span {
   -webkit-transform: translateX(10px);
           transform: translateX(10px);
 }
