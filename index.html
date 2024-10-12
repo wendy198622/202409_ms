@@ -514,7 +514,13 @@
 		slidesNavigation: true,
 		slidesNavPosition: 'bottom', // Default
 		controlArrows: false,
-		autoScrolling:true
+		autoScrolling:true,
+        loopBottom: true,
+        afterRender: function () {
+            setInterval(function () {
+                fullpage_api.moveSlideRight();
+            }, 5000);
+        }
 	
 	});
 
