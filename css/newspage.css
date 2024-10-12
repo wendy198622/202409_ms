@@ -1177,19 +1177,58 @@ header .logo a h1 span {
   background-image: url(../img/newspage_bg.png);
 }
 
-.style1 p {
+.style1 .fp-overflow {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.style1 .fp-overflow:before {
+  display: none;
+}
+
+.style1 .fp-overflow p {
   text-align: center;
 }
 
-.style1 .photo_frame {
+.style1 .fp-overflow .photo_frame {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 40px 0;
 }
 
-.style1 .photo_frame img {
-  margin: 0 10px;
+.style1 .fp-overflow .photo_frame img {
+  width: calc((100% - 20px) / 3);
+}
+
+@media (max-width: 960px) {
+  .style1 .fp-overflow .photo_frame img {
+    width: calc((100% - 10px) / 2);
+  }
+  .style1 .fp-overflow .photo_frame img:nth-child(3) {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .style1 .fp-overflow .photo_frame img {
+    width: 100%;
+  }
+  .style1 .fp-overflow .photo_frame img:nth-child(2) {
+    display: none;
+  }
+}
+
+.style1 .fp-overflow .photo_frame img + img {
+  margin-left: 10px;
 }
 
 .style2 {
@@ -1197,24 +1236,41 @@ header .logo a h1 span {
   padding-bottom: 100px;
 }
 
-.style2 .newsframe {
+.style2 .fp-overflow {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.style2 .fp-overflow:before {
+  display: none;
+}
+
+.style2 .fp-overflow .newsframe {
   max-width: 960px;
 }
 
-.style2 h5 {
+.style2 .fp-overflow h5 {
   margin-top: 20px;
 }
 
-.style2 p {
+.style2 .fp-overflow p {
   text-align: left;
 }
 
-.style2 .photo {
+.style2 .fp-overflow .photo {
   width: 600px;
   margin: 0 auto 40px;
 }
 
-.style2 .link {
+.style2 .fp-overflow .link {
   background: #fff;
   border-radius: 10px;
   display: inline-block;
@@ -1222,7 +1278,7 @@ header .logo a h1 span {
   padding: 6px 12px 4px;
 }
 
-.style2 .link a {
+.style2 .fp-overflow .link a {
   display: block;
   margin: 0 auto;
   text-transform: uppercase;
@@ -1234,7 +1290,7 @@ header .logo a h1 span {
   letter-spacing: 2px;
 }
 
-.style2 .link a span {
+.style2 .fp-overflow .link a span {
   vertical-align: middle;
   margin-left: 6px;
   color: #2b326a;
@@ -1243,7 +1299,7 @@ header .logo a h1 span {
   transition: all .3s;
 }
 
-.style2 .link a:hover span {
+.style2 .fp-overflow .link a:hover span {
   -webkit-transform: translateX(-10px);
           transform: translateX(-10px);
 }
