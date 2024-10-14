@@ -1270,15 +1270,26 @@ header .logo a h1 span {
   margin: 0 auto 40px;
 }
 
-.style2 .fp-overflow .link {
+.backlink_box {
+  background-image: url(../img/newspage_bg.png);
+  padding-bottom: 100px;
+}
+
+.backlink_box .fp-overflow {
+  height: auto;
+  display: block;
+}
+
+.backlink_box .backlink {
+  height: 40px;
   background: #fff;
   border-radius: 10px;
   display: inline-block;
-  margin-top: 100px;
+  margin: 0 auto;
   padding: 6px 12px 4px;
 }
 
-.style2 .fp-overflow .link a {
+.backlink_box .backlink a {
   display: block;
   margin: 0 auto;
   text-transform: uppercase;
@@ -1290,7 +1301,7 @@ header .logo a h1 span {
   letter-spacing: 2px;
 }
 
-.style2 .fp-overflow .link a span {
+.backlink_box .backlink a span {
   vertical-align: middle;
   margin-left: 6px;
   color: #2b326a;
@@ -1299,7 +1310,7 @@ header .logo a h1 span {
   transition: all .3s;
 }
 
-.style2 .fp-overflow .link a:hover span {
+.backlink_box .backlink a:hover span {
   -webkit-transform: translateX(-10px);
           transform: translateX(-10px);
 }
