@@ -37,7 +37,7 @@
 .hotsale{
     @media (max-width:600px){
         background: url(../img/home-hotsale_bg.png) right bottom no-repeat;
-        background-size: 100% auto;
+        background-size: cover;
     }
     .fp-overflow{
         overflow: hidden;
