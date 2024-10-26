@@ -265,12 +265,6 @@ input, button, select, textarea {
   height: 100vh;
 }
 
-@media (max-width: 800px) {
-  .fp-overflow {
-    height: auto;
-  }
-}
-
 @supports (-webkit-overflow-scrolling: touch) {
   .fp-overflow {
     height: auto;
@@ -1742,6 +1736,12 @@ header .logo a h1 span {
   text-transform: uppercase;
 }
 
+@media (max-width: 600px) {
+  .progress .progress_outerbox .progress_frame .progress_list .item .progress_info .date .year, .progress .progress_outerbox .progress_frame .progress_list .item .progress_info .date .month {
+    font-size: 16px;
+  }
+}
+
 .progress .progress_outerbox .progress_frame .progress_list .item .progress_info .date .year {
   margin-bottom: -4px;
 }
@@ -1760,7 +1760,8 @@ header .logo a h1 span {
 
 @media (max-width: 600px) {
   .progress .progress_outerbox .progress_frame .progress_list .item .progress_info .day {
-    font-size: 42px;
+    font-size: 32px;
+    margin-left: 0;
   }
 }
 
@@ -1773,7 +1774,8 @@ header .logo a h1 span {
 @media (max-width: 800px) {
   .progress .progress_outerbox .progress_frame .progress_list .item .progress_photo {
     width: 120px;
-    height: 80px;
+    height: 120px;
+    margin: 0;
   }
 }
 
