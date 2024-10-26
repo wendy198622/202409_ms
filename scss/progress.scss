@@ -220,29 +220,23 @@ $select-background: #009944;
                         display: inline-block;
                         margin-top: 20px;
                         padding: 6px 12px 4px;
-                        a{
-                            // width: 160px;
-                            display: block;
-                            margin: 0 auto;
-                            text-transform: uppercase;
+                        color: #fff;
+                        text-transform: uppercase;
+                        vertical-align: middle;
+                        text-align: center;
+                        font-family: $font-en;
+                        font-weight: 600;
+                        letter-spacing: 2px;
+                        span{
                             vertical-align: middle;
-                            color: transparent;
+                            margin-left: 6px;
                             color: #fff;
-                            text-align: center;
-                            font-family: $font-en;
-                            font-weight: 600;
-                            letter-spacing: 2px;
+                            margin-bottom: 3px;
+                            transition: all .3s;
+                        }
+                        &:hover{
                             span{
-                                vertical-align: middle;
-                                margin-left: 6px;
-                                color: #fff;
-                                margin-bottom: 3px;
-                                transition: all .3s;
-                            }
-                            &:hover{
-                                span{
-                                    transform: translateX(10px);
-                                }
+                                transform: translateX(10px);
                             }
                         }
                     }

@@ -579,7 +579,6 @@ header .logo a h1 {
   font-family: "Noto serif TC", sans-serif;
   font-size: 42px;
   font-weight: 700;
-  letter-spacing: 16px;
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
@@ -616,7 +615,7 @@ header .logo a h1 {
 
 header .logo a h1 span {
   display: inline-block;
-  letter-spacing: 0;
+  letter-spacing: 16px;
 }
 
 #menu {
