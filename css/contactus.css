@@ -265,6 +265,12 @@ input, button, select, textarea {
   height: 100vh;
 }
 
+@media (max-width: 800px) {
+  .fp-overflow {
+    height: auto;
+  }
+}
+
 @supports (-webkit-overflow-scrolling: touch) {
   .fp-overflow {
     height: auto;
