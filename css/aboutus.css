@@ -532,7 +532,7 @@ header {
 @media (max-width: 600px) {
   header {
     width: 280px;
-    padding: 20px 0 20px 40px;
+    padding: 20px 0 20px 20px;
   }
 }
 
@@ -607,8 +607,8 @@ header .logo a h1 {
 
 @media (max-width: 600px) {
   header .logo a h1 {
-    font-size: 24px;
-    letter-spacing: 6px;
+    font-size: 22px;
+    letter-spacing: 4px;
     margin: 10px 0 10px 20px;
   }
 }
