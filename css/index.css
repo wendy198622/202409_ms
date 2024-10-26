@@ -1765,14 +1765,15 @@ header .logo a h1 span {
 }
 
 .progress .progress_outerbox .progress_frame .progress_list .item .progress_photo {
-  width: 240px;
-  height: 160px;
+  width: 180px;
+  height: 120px;
   margin: 0 10px;
 }
 
 @media (max-width: 800px) {
   .progress .progress_outerbox .progress_frame .progress_list .item .progress_photo {
-    width: 160px;
+    width: 120px;
+    height: 80px;
   }
 }
 
